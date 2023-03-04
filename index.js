@@ -1,14 +1,15 @@
 let buttonCalc = elId("calc");
 
 buttonCalc.addEventListener('click', function (e) {
+
   let currentStamina = elId("staminaAtual").value,
     desiredStamina = elId("staminaDesejada").value,
     aswer = elId("aswer"),
     curretStaminaNumber = Number(currentStamina),
     desiredStaminaNumber = Number(desiredStamina);
+
   calc(curretStaminaNumber, desiredStaminaNumber, aswer)
 })
-
 
 function calc(number1, number2, aswer) {
 
